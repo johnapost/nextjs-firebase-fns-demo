@@ -1,0 +1,10 @@
+{
+  "name": "nextjs-firebase-fns-demo",
+  "version": "0.1.0",
+  "description": "Demo for serverless NextJS on Firebase Functions",
+  "main": "index.js",
+  "repository": "https://github/johnapost/nextjs-firebase-fns-demo",
+  "author": "John Apostol",
+  "license": "MIT",
+  "private": false
+}
