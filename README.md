@@ -23,3 +23,13 @@ That said, your Firebase Functions are actually [Google Cloud Functions](https:/
 
 ## Requirements
 * Node.js 8.15.0, the latest supported runtime for [Firebase Functions](https://cloud.google.com/functions/docs/concepts/nodejs-8-runtime)
+
+## Getting Started
+* [Create your Firebase project](https://console.firebase.google.com/) - Requires Google login.
+* `npm install` - Install dependencies
+* `./node_modules/.bin/firebase login` - Requires web browser for Google login.
+* `./node_modules/.bin/firebase use --add` - Select your project when prompted.
+* `./node_modules/.bin/firebase deploy` - Deploy these functions to your project.
+* Go to your Firebase console.
+* Go to Functions in the left-hand navigation.
+* Visit one of your function URLs and check the demo.
