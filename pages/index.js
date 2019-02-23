@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default () =>
   <>
-    <p>This page is served by the index function</p>
+    <p>This page is served by the index function.</p>
     <ul>
       <li>
         <Link href='/nextjs'>Why NextJS?</Link>

@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default () =>
   <>
-    <p>This page is served by the serverless function</p>
+    <p>This page is served by the serverless function.</p>
     <ul>
       <li>
         <Link href='/'>Home</Link>
