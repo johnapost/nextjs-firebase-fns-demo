@@ -4,8 +4,7 @@
       "next/babel",
       {
         "targets": {
-          "browsers": ["last 2 versions"],
-          "node": "8.15.0"
+          "browsers": ["last 2 versions"]
         }
       }
     ]

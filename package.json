@@ -6,11 +6,13 @@
   "author": "John Apostol",
   "license": "MIT",
   "scripts": {
-    "dev": "next",
-    "build": "next build && babel \"index.js\" --out-file \".next/serverless/index.js\"",
-    "start": "next start",
-    "copy:deps": "cpx \"*{package.json,package-lock.json}\" \".next/serverless\"",
-    "deploy": "firebase deploy"
+    "build:app": "next build src/app",
+    "build:functions": "cpx \"src/functions/**/*.*\" dist/functions -C",
+    "build:public": "cpx \"src/app/static/**/*.*\" dist/public/static -C",
+    "clean": "rimraf dist",
+    "copy:deps": "cpx \"*{package.json,package-lock.json}\" dist/functions -C",
+    "deploy": "firebase deploy",
+    "dev": "next"
   },
   "dependencies": {
     "firebase-admin": "^7.0.0",
@@ -23,8 +25,8 @@
     "node": "8"
   },
   "devDependencies": {
-    "@babel/cli": "^7.2.3",
     "cpx": "^1.5.0",
-    "firebase-tools": "^6.4.0"
+    "firebase-tools": "^6.4.0",
+    "rimraf": "^2.6.3"
   }
 }

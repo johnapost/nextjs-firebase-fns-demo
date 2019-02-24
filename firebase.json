@@ -1,6 +1,27 @@
 {
   "functions": {
-    "predeploy": "npm run build && npm run copy:deps",
+    "predeploy": "npm run build:app && npm run build:functions && npm run build:public && npm run copy:deps",
     "source": ".next/serverless"
+  },
+  "hosting": {
+    "public": "dist/public",
+    "rewrites": [
+      {
+        "source": "/firebase",
+        "function": "firebase"
+      },
+      {
+        "source": "/nextjs",
+        "function": "nextjs"
+      },
+      {
+        "source": "/serverless",
+        "function": "serverless"
+      },
+      {
+        "source": "**/**",
+        "function": "index"
+      }
+    ]
   }
 }
