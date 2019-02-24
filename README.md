@@ -29,7 +29,7 @@ That said, your Firebase Functions are actually [Google Cloud Functions](https:/
 * `npm install` - Install dependencies
 * `./node_modules/.bin/firebase login` - Requires web browser for Google login.
 * `./node_modules/.bin/firebase use --add` - Select your project when prompted.
-* `./node_modules/.bin/firebase deploy` - Deploy these functions to your project.
+* `npm run deploy` - Deploy these functions to your project.
 * Go to your Firebase console.
 * Go to Functions in the left-hand navigation.
 * Visit one of your function URLs and check the demo.

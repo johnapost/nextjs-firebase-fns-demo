@@ -7,11 +7,14 @@
   "license": "MIT",
   "scripts": {
     "dev": "next",
-    "build": "next build",
+    "build": "next build && babel \"index.js\" --out-file \".next/serverless/index.js\"",
     "start": "next start",
-    "copy:deps": "cpx \"*{package.json,package-lock.json,index.js}\" \".next/serverless\""
+    "copy:deps": "cpx \"*{package.json,package-lock.json}\" \".next/serverless\"",
+    "deploy": "firebase deploy"
   },
   "dependencies": {
+    "firebase-admin": "^7.0.0",
+    "firebase-functions": "^2.2.0",
     "next": "^8.0.3",
     "react": "^16.8.3",
     "react-dom": "^16.8.3"
@@ -20,9 +23,8 @@
     "node": "8"
   },
   "devDependencies": {
+    "@babel/cli": "^7.2.3",
     "cpx": "^1.5.0",
-    "firebase-admin": "^7.0.0",
-    "firebase-functions": "^2.2.0",
     "firebase-tools": "^6.4.0"
   }
 }
