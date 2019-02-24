@@ -1,0 +1,12 @@
+{
+  "presets": [
+    [
+      "next/babel",
+      {
+        "targets": {
+          "browsers": ["last 2 versions"]
+        }
+      }
+    ]
+  ]
+}

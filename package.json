@@ -1,10 +1,32 @@
 {
   "name": "nextjs-firebase-fns-demo",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Demo for serverless NextJS on Firebase Functions",
-  "main": "index.js",
   "repository": "https://github/johnapost/nextjs-firebase-fns-demo",
   "author": "John Apostol",
   "license": "MIT",
-  "private": false
+  "scripts": {
+    "build:app": "next build src/app",
+    "build:functions": "cpx \"src/functions/**/*.*\" dist/functions",
+    "build:public": "cpx \"src/app/static/**/*.*\" dist/public/static",
+    "clean": "rimraf dist",
+    "copy:deps": "cpx \"*{package.json,package-lock.json}\" dist/functions",
+    "deploy": "firebase deploy",
+    "dev": "next src/app"
+  },
+  "dependencies": {
+    "firebase-admin": "^7.0.0",
+    "firebase-functions": "^2.2.0",
+    "next": "^8.0.3",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3"
+  },
+  "engines": {
+    "node": "8"
+  },
+  "devDependencies": {
+    "cpx": "^1.5.0",
+    "firebase-tools": "^6.4.0",
+    "rimraf": "^2.6.3"
+  }
 }
