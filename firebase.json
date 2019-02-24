@@ -1,7 +1,7 @@
 {
   "functions": {
-    "predeploy": "npm run build:app && npm run build:functions && npm run build:public && npm run copy:deps",
-    "source": ".next/serverless"
+    "predeploy": "npm run clean && npm run build:app && npm run build:functions && npm run build:public && npm run copy:deps",
+    "source": "dist/functions"
   },
   "hosting": {
     "public": "dist/public",
