@@ -1,19 +1,9 @@
-import Link from 'next/link'
+import Nav from '../components/nav'
 
 export default () =>
   <>
     <p>This page is served by the firebase function.</p>
-    <ul>
-      <li>
-        <Link href='/'>Home</Link>
-      </li>
-      <li>
-        <Link href='/nextjs'>Why NextJS?</Link>
-      </li>
-      <li>
-        <Link href='/serverless'>Why serverless mode?</Link>
-      </li>
-    </ul>
+    <Nav />
     <p>
       I recommend Firebase Functions because it provides easy access to the Firebase ecosystem.
     </p>
