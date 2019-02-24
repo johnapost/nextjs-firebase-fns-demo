@@ -1,5 +1,6 @@
 const onRequest = require('firebase-functions').https.onRequest
 
+// These pages are all available in dist once `npm run build:app` is run
 const index = require('./next/serverless/pages/index')
 const firebase = require('./next/serverless/pages/firebase')
 const nextjs = require('./next/serverless/pages/nextjs')
