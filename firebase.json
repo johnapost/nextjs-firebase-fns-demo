@@ -1,6 +1,6 @@
 {
   "functions": {
     "predeploy": "npm run build && npm run copy:deps",
-    "source": ".next/serverless/pages"
+    "source": ".next/serverless"
   }
 }
