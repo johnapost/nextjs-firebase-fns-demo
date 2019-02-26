@@ -11,7 +11,6 @@
     "build:public": "cpx \"src/app/static/**/*.*\" dist/public/static",
     "clean": "rimraf dist",
     "copy:deps": "cpx \"*{package.json,package-lock.json}\" dist/functions",
-    "deploy": "firebase deploy",
     "dev": "next src/app"
   },
   "dependencies": {
