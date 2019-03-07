@@ -1,9 +1,10 @@
 {
   "functions": {
-    "predeploy": "npm run clean && npm run build:app && npm run build:functions && npm run build:public && npm run copy:deps",
+    "predeploy": "npm run clean && npm run build:app && npm run build:functions && npm run copy:deps",
     "source": "dist/functions"
   },
   "hosting": {
+    "predeploy": "npm run build:public",
     "public": "dist/public",
     "rewrites": [
       {
