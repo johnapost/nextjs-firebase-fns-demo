@@ -33,3 +33,8 @@ That said, your Firebase Functions are actually [Google Cloud Functions](https:/
 * Visit the [Firebase Console](https://console.firebase.google.com/) and select your project.
 * Navigate to Hosting in the left-hand navigation.
 * Click on the <firebase-project-id>.firebaseapp.com domain and see the demo.
+
+## Important Note:
+All your functions are bundled together when uploading to Firebase. That means that with sufficient routes you may hit the [Max deployment size quota](https://cloud.google.com/functions/quotas). Plan accordingly!
+
+[See this comment.](https://github.com/firebase/firebase-tools/issues/1163#issuecomment-472071855)
