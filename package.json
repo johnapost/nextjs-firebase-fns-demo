@@ -17,8 +17,8 @@
     "firebase-admin": "7.1.1",
     "firebase-functions": "2.2.1",
     "next": "8.0.4",
-    "react": "16.8.5",
-    "react-dom": "16.8.5"
+    "react": "16.8.6",
+    "react-dom": "16.8.6"
   },
   "engines": {
     "node": "8"
