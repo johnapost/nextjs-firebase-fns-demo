@@ -26,6 +26,6 @@
   "devDependencies": {
     "cpx": "1.5.0",
     "firebase-tools": "6.10.0",
-    "rimraf": "2.6.3"
+    "rimraf": "2.7.1"
   }
 }
